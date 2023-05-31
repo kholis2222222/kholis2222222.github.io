@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Input Data Cutting Dies</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    h1 {
+      text-align: center;
+    }
+    
+    .form-container {
+      max-width: 500px;
+      margin: 0 auto;
+      background-color: #f2f2f2;
+      padding: 20px;
+      border-radius: 5px;
+    }
+    
+    .form-group {
+      margin-bottom: 15px;
+    }
+    
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+    }
+    
+    .form-group button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Form Input Data Cutting Dies</h1>
+  <div class="form-container">
+    <form action="submit.php" method="POST">
+      <div class="form-group">
+        <label for="die_name">Nama Die:</label>
+        <input type="text" id="die_name" name="die_name" required>
+      </div>
+      <div class="form-group">
+        <label for="die_size">Ukuran Die:</label>
+        <input type="text" id="die_size" name="die_size" required>
+      </div>
+      <div class="form-group">
+        <label for="die_material">Material Die:</label>
+        <input type="text" id="die_material" name="die_material" required>
+      </div>
+      <div class="form-group">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
